@@ -48,19 +48,19 @@
     </header>
     <main>
         <section>
-            <p>En Flores del Valle nos dedicamos a la venta de flores de la mejor calidad. Contamos con una amplia variedad de flores para todo tipo de ocasión. ¡Visítanos!</p>
-        </section>
-        <section>
-            <h2>¡Conócenos!</h2>
-            <p>Somos una empresa dedicada a la venta de flores de la mejor calidad. Contamos con una amplia variedad de flores para todo tipo de ocasión. ¡Visítanos!</p>
-        </section>
-        <section>
-            <h2>¡Nuestros servicios!</h2>
-            <p>Contamos con una amplia variedad de flores para todo tipo de ocasión. ¡Visítanos!</p>
-        </section>
-        <section>
             <h2>¡Contáctanos!</h2>
             <p>¡Visítanos!</p>
+            <div class="formulario">
+                <form action="enviar.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </section>
     </main>
     <footer>
