@@ -1,80 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root
 {
     --color-verdePastel: #A3C586;
+    --color-verdePastel-Fondo: #cefaa880;
+
     --color-blanco: #ffffff;
     --color-marron: #8B4513;
     --color-amarilloSuave: #FFD700;
     --color-azulPastel: #87CEFA;
     --color-rosaPastel: #FFB6C1;
     --color-azulOscuro: #00008B;
+    --color-amarilloNeon: #FFD700;
 }
 
 body{
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
 
 }
+
+.idiomas{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: var(--color-azulOscuro);
+}
+.idiomas p{
+    margin-right: 20%;
+    font-size:1.1rem;
+    color: var(--color-blanco);
+    padding: 0.5rem;
+    text-align: center;
+}
+.idiomas figure{
+    margin: 0;
+    padding: 0;
+    width: 7%;
+    height: 15%;
+}
+.idiomas figure a img{
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+}
 header{    
     color: var(--color-blanco);
-    text-align: center;
     width: 100%;
-    height: 15rem;
-    display: flex;
-    justify-content: center;
-
+    height: 100%;
+    display: inline-block;
 }
-
- video {
+video{
     position: absolute;
     width: 100%;
-    height: 28rem;
+    height: 100%;
     z-index: -1;
     object-fit: cover;
     opacity: 0.7;   
     }
 
-    .idiomas{
-        display: flex;
-        justify-content: right;
-        width: 100%;
-        background-color: var(--color-azulOscuro);
-    }
-    .idiomas p{
-        margin-right: 30rem;
-        font-size:1rem;
-        color: var(--color-blanco);
-    }
+.headerContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    position: relative;
+}
+.headerContainer figure{
+    width: 15%;
+    height: 20%;
+}
+.headerContainer figure img{
+    width: 33%;
+    height: auto;
+    margin: auto;
+    margin-left: 50%;
+    border-radius: 1rem;
 
-    .idiomas figure{
-        width: 5%;
-        height: 4rem;
-        justify-content: right;
-        display: flex;
-        margin-right: 10rem;
-    }
-    .idiomas figure a img{
-        width: 40%;
-        height: auto;
-        border-radius: 50%;
-    }
-    .idiomas a{
-        color: var(--color-blanco);
-        text-decoration: none;
-        font-size: 1.5rem;
-    }
-
+}
 nav{
     background-color: var(--color-verdePastel);
     color: var(--color-blanco);
     padding: 10px 0;
     text-align: center;
-    width: 80%;
+    width: 75%;
     height: 15%;
-    margin-top: .7rem;
     border-radius: .5rem;
 }
 nav ul{
@@ -91,62 +109,63 @@ nav a{
     text-decoration: none;
     padding: 10px 20px;
     font-size: 1.5rem;
-
+    
 }
 nav a:hover{
-    color: var(--color-marron);
-}
-
-figure{
-    margin: 0;
-    padding: 0;
-    width: 18%;
-    height: 100%;
-    margin-top: .5rem;
-}
-figure img{
-    width: 30%;
-    height: auto;
-    border-radius: 20%;
+    color: var(--color-amarilloNeon);
 }
 #titulo{
     color: var(--color-blanco);
     width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 2;
-    margin-top: 7rem;
-    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+#titulo p{
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    margin-top: 10%;
 }
 
-main{
+.container{
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 3rem;
-    margin-top: 10rem;
-    padding: 2rem;
-    height: 40rem;
+    padding: 1rem;
+    height: 20rem;
+    width: 100%;
+    color: var(--color-blanco);
     
 }
 section{
-    margin: 10px;
-    padding: 10px;
+    background-color: var(--color-verdePastel-Fondo);
+    border-radius: 2rem;
+    text-align: center;
+    padding: .5rem;
+}
+#cardExterior{
+    margin-top: 5%;
 }
 footer{
     background-color: var(--color-verdePastel);
     color: var(--color-blanco);
-    padding: 10px 0;
     text-align: center;
     width: 100%;
-    height: 20%;
+    height: 20rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
-    margin-top: .5rem;
 }
 footer p{
-    margin: 0;
+    margin: 1rem;
     padding: 0;
 }
 .ubicacion{
@@ -155,4 +174,9 @@ footer p{
     width: 25%;
     height: 25%;
 }
-
+.datos{
+    margin-top: 1rem;
+    padding: 10px;
+    width: 25%;
+    height: 25%;
+}

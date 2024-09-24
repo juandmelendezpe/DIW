@@ -26,7 +26,8 @@
 
         <video autoplay muted loop>
             <source src="css/floreria.mp4" type="video/mp4">
-        </video>       
+        </video>    
+        <div class="headerContainer">   
          <figure>
             <img src="https://static.vecteezy.com/system/resources/previews/000/623/708/original/beauty-vector-lotus-flowers-design-logo-template-icon-vector.jpg" alt="Logo de Flores del Valle">
         </figure>
@@ -41,16 +42,15 @@
 
             </ul>
         </nav>
+    </div>
         <div id="titulo">
-            <h1>¡Bienvenidos a Flores del Valle!</h1>
-            <h2>¡La mejor calidad en flores!</h2>
+            <p>¡Bienvenidos a Flores del Valle!</p>
+            <h1>¡La mejor calidad en flores!</h1>
         </div>
     </header>
     <main>
-        <section>
-            <h2>¡Contáctanos!</h2>
-            <p>¡Visítanos!</p>
-            <div class="formulario">
+            <section>
+                <h2>¡Contacta con nosotros!</h2>
                 <form action="enviar.php" method="post">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -60,15 +60,20 @@
                     <textarea id="mensaje" name="mensaje" required></textarea>
                     <input type="submit" value="Enviar">
                 </form>
+            </section>
+        </main>
+        <footer>
+            <div class="ubicacion">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5754.2559846699!2d-4.687182441953585!3d40.65421628318694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd40f3a9ca3eadc9%3A0x89916fc696fed564!2sC.%20Hornos%20Caleros%2C%2005001%20%C3%81vila!5e1!3m2!1ses!2ses!4v1726683251149!5m2!1ses!2ses" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Flores del Valle | Todos los derechos reservados | Juand Melendez .</p>
-        <div class="ubicacion">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5754.2559846699!2d-4.687182441953585!3d40.65421628318694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd40f3a9ca3eadc9%3A0x89916fc696fed564!2sC.%20Hornos%20Caleros%2C%2005001%20%C3%81vila!5e1!3m2!1ses!2ses!4v1726683251149!5m2!1ses!2ses" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </footer>
-    
-</body>
-</html>
+            <div class="datos">
+                <p>Avda. de los Hornos Caleros, 1</p>
+                <p>05001 Ávila</p>
+                <p>Teléfono: 920 25 25 25</p>
+                <p>Email: pedidos@floresdelvalle.com</p>
+            </div>
+            <p>© 2024 Flores del Valle | Todos los derechos reservados | Juand Melendez .</p>
+        </footer>
+        
+    </body>
+    </html>
