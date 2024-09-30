@@ -8,7 +8,6 @@
 {
     --color-verdePastel: #A3C586;
     --color-verdePastel-Fondo: #cefaa880;
-
     --color-blanco: #ffffff;
     --color-marron: #8B4513;
     --color-amarilloSuave: #FFD700;
@@ -51,53 +50,55 @@ body{
     border-radius: 50%;
 }
 header{    
-    color: var(--color-blanco);
     width: 100%;
-    height: 100%;
+    height: 30rem;
     display: inline-block;
+    background-image: url("https://www.marantafloristeria.es/wp-content/uploads/2019/06/IMG_20190524_091134.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: static;
+
 }
-video{
+ #videoFondo{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 80%;
     z-index: -1;
     object-fit: cover;
-    opacity: 0.7;   
-    }
+    opacity: 0.7;
+ }   
 
 .headerContainer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 100%;
-    padding: 1rem;
+    height: 15%;
     position: relative;
-}
-.headerContainer figure{
-    width: 15%;
-    height: 20%;
-}
-.headerContainer figure img{
-    width: 33%;
-    height: auto;
-    margin: auto;
-    margin-left: 50%;
-    border-radius: 1rem;
+    background-color: var(--color-blanco);
 
 }
+#headerFigure{
+    width: 20%;
+    height: 100%;
+    border-radius: 50%;
+}
+#headerFigure img{
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 30%;
+}
 nav{
-    background-color: var(--color-verdePastel);
-    color: var(--color-blanco);
-    padding: 10px 0;
+    padding: 5px;
     text-align: center;
     width: 75%;
-    height: 15%;
+    height: 3rem;
     border-radius: .5rem;
 }
 nav ul{
     list-style: none;
-    margin: 0;
+    margin: .5rem;
     padding: 0;
 }
 nav ul li{
@@ -105,10 +106,12 @@ nav ul li{
 }
 
 nav a{
-    color: var(--color-blanco);
+    color: var(--color-azulOscuro);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
+    background-color: var(--color-verdePastel);
     font-size: 1.5rem;
+    border-radius: 1rem;
     
 }
 nav a:hover{
@@ -120,43 +123,67 @@ nav a:hover{
     position: relative;
     display: inline-block;
     text-align: center;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px var(--color-azulOscuro);
+    font-weight: bold;
     
 }
 #titulo p{
     font-size: 5rem;
     margin-top: 1rem;
+
+
 }
 main{
     width: 100%;
     height: 100%;
-    position: relative;
     display: inline-block;
-    margin-top: 10%;
+    position: relative;
 }
 
-.container{
+.main-container{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 3rem;
     padding: 1rem;
-    height: 20rem;
     width: 100%;
+    height: 20rem;
     color: var(--color-blanco);
     
 }
+.main-container2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    height: 20rem;
+    color: var(--color-blanco);
+
+    
+}
 section{
-    background-color: var(--color-verdePastel-Fondo);
+    background-color: var(--color-amarilloSuave);
+    width: 30%;
+    height: 100%;
     border-radius: 2rem;
     text-align: center;
     padding: .5rem;
+    box-shadow: 2px 2px 4px var(--color-azulOscuro);
+    color: var(--color-azulOscuro);
 }
 #cardExterior{
     margin-top: 5%;
 }
 footer{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+.footerContainer{
     background-color: var(--color-verdePastel);
     color: var(--color-blanco);
     text-align: center;
@@ -164,7 +191,7 @@ footer{
     height: 20rem;
     display: flex;
     justify-content: space-around;
-    position: relative;
+    
 }
 footer p{
     margin: 1rem;
