@@ -18,6 +18,66 @@
     --color-azulOscuro: #00008B;
     --color-amarilloNeon: #FFD700;
 }
+/*PARA MOVILES*/
+@media screen and (max-width: 480px){
+    nav{
+        display: grid;
+        grid-template-columns: repeat(1,80%);        
+             justify-content: end;
+             background-color: white;
+    }
+    nav>div{
+     border: solid;
+        }
+    main{
+     display: grid;
+     grid-template-columns: repeat(1,90%);
+     justify-content: center;
+     }
+     aside{
+         display: grid;
+         grid-template-columns: repeat(3,33%);
+         padding: none;
+         grid-template-rows: repeat(2,40%);
+     }
+     aside>:first-child{
+         grid-column: 1;
+     }
+     aside>:nth-child(2){
+         grid-column: 2;
+     }
+     aside>:nth-child(3){
+         grid-column: 3;
+     } 
+     aside>:nth-child(4){
+         grid-column: 1;
+     }
+     aside>:nth-child(5){
+         grid-column: 2;
+     }
+     footer{
+            display: grid;
+            grid-template-columns: repeat(1,100%);
+            justify-content: center;
+     }
+ 
+ 
+ }
+ /*PARA TABLETS*/
+ @media screen and (min-width: 481px) and (max-width: 768px){
+    nav{
+        grid-template-columns: repeat(2,1fr);
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        grid-template-columns: 1fr;
+    }
+ }
 
 body{
     background-color: #f0f0f0;
@@ -69,9 +129,6 @@ header{
     z-index: 1;
     background-color: var(--color-blanco-fondo);
 }
-
-
-
  #videoFondo{
     position: absolute;
     width: 80%;
