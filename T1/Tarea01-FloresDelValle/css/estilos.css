@@ -3,22 +3,81 @@
     margin: 0;
     padding: 0;
 }
-
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
 :root
 {
     --color-verdePastel: #A3C586;
     --color-verdePastel-Fondo: #cefaa880;
     --color-blanco: #ffffff;
     --color-blanco-fondo: #ffffff82;
-
     --color-marron: #8B4513;
     --color-amarilloSuave: #f9e1579e;
     --color-azulPastel: #87CEFA;
     --color-rosaPastel: #FFB6C1;
     --color-azulOscuro: #00008B;
     --color-amarilloNeon: #FFD700;
+    --color-morado:  rgb(122, 68, 248);
 }
-/*PARA MOVILES*/
+/*PARA MOVILES
 @media screen and (max-width: 480px){
     nav{
         display: grid;
@@ -63,7 +122,7 @@
  
  
  }
- /*PARA TABLETS*/
+ /*PARA TABLETS
  @media screen and (min-width: 481px) and (max-width: 768px){
     nav{
         grid-template-columns: repeat(2,1fr);
@@ -78,7 +137,7 @@
         grid-template-columns: 1fr;
     }
  }
-
+*/
 body{
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
@@ -94,27 +153,27 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-#videoFondo{
-    position: absolute;
-    width: 80%;
-    z-index: -1;
-    object-fit: cover;
-    opacity: 0.7;
-}   
+    border-bottom: solid .1rem var(--color-morado);
+}  
 #headerFigure{
     width: 20%;
     height:100%;
     background-color: var(--color-blanco);
+    border: .2rem solid var(--color-morado);
 }
 #headerFigure img{
-    width: 40%;
-    height: 95%;
-    margin-left: 25%;
+    width: 35%;
+    height: 70%;
     padding: auto;
+    margin-left: 35%;
     border-radius: 50%;
-
-
+    text-align: center;
+}
+#headerFigure p{
+    font-size: 1.5rem;
+    color: var(--color-azulOscuro);
+    text-align: center;
+    height: 20%;
 }
 .headerContainer{
     width: 80%;
@@ -127,7 +186,7 @@ header{
     height: 40%;
     display: flex;
     justify-content: right;
-    background-color: var(--color-azulOscuro);
+    background-color: var(--color-morado);
 }
 .idiomas p{
     margin-right: 20%;
@@ -171,7 +230,7 @@ nav a{
     padding: 10px 10px;
     font-size: 1rem;
     text-decoration: none;
-    border-bottom: solid .1rem var(--color-azulOscuro);
+    border-bottom: solid .1rem var(--color-morado);
     
 }
 nav a:hover{
@@ -179,85 +238,117 @@ nav a:hover{
     background-color: var(--color-azulOscuro);
     border-radius: .5rem;
 }
+.banner{
+    width: 100%;
+    height: 15rem;
+    display: inline-block;
+}
+.carruselTam{
+    width: 100%;
+    height: 50vh; /* 50% de la altura de la ventana gráfica */
+}
+.carruselTam img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
 /*  Banner de la pagina */
 main{
     width: 100%;
-    height: 50rem;
+    height: 100%;
     display: inline-block;
     position: relative;
-}
-#Banner{
-    width: 100%;
-    height: 30rem;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-.image {
-    display: block;
-    width: 80%;
-    height: 50%;
-    margin-left: 10%;
-    opacity: 0.8; /* Imagen con opacidad del 50% */
-}
-.overlay {
-    position: absolute;
-    width: 70%;
-    height: 50%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold; /* Título en negrita */
-    color: yellow; /* Color del título */
-    text-shadow: 3px 3px 6px #7a0285; /* Sombra para resaltar el título */
-    margin-left: 14%;
-    background-color: var(--color-blanco-fondo);
-    margin-top: 5%;
-    border-radius: 7%;
 
-}
-
-#titulo{
-    width: 100%;
-    height: auto;
-    margin-top: 10%;
-    color: var(--color-blanco);
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    text-shadow: 2px 2px 4px var(--color-azulOscuro);
-    font-weight: bold;
-}
-#titulo p{
-    z-index: 1;
-    font-size: 5rem;
 }
 .main-container{
     display: block;
     width: 100%;
     height: 50%;
+    padding: 1rem;
+}
+.section-container{
+    width: 95%;
+    height: auto;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+
+}
+.card-pro{
+    margin: .7rem;
+}
+.cart-img-top-tam img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+/* tarjeta de productos */
+.titulo-subrayado {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 95vw;
+    color: var(--color-azulPastel);
+
+}
+.titulo-subrayado::before,
+.titulo-subrayado::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 40%; /* Ajusta el ancho de las líneas */
+    height: 1px; /* Ajusta el grosor de las líneas */
+    background-color:var(--color-azulPastel); /* Ajusta el color de las líneas */
+}
+.titulo-subrayado::before {
+    left:25vw; /* Ajusta la distancia desde el texto */
+}
+.titulo-subrayado::after {
+    right:25vw; /* Ajusta la distancia desde el texto */
+}
+article-container{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: solid 1px red;
+    margin-top: 2%;
 }
-section{
-    background-color: var(--color-blanco-fondo);
-    width: 30%;
-    height: 80%;
-    border-radius: 2rem;
-    text-align: center;
-    padding: .5rem;
-    box-shadow: 2px 2px 4px var(--color-azulOscuro);
-    color: var(--color-azulOscuro);
+article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.section-container{
-    width: 80%;
-    height: auto;
-    padding: .5rem;
+.art1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.art1 figure{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.art1 figure img{
+    width: 97%;
+    height: 100%;
+    object-fit: cover;
+}
+.art2{
+    width: 48vw;
+    height: 67vh;
+    display: flex;
+    justify-content:space-between;
 }
 #cardExterior{
     margin-top: 5%;
@@ -277,6 +368,45 @@ footer{
     justify-content: space-around;
     position: relative;
     
+}
+.nosotros{
+    background-image: url("../img/beautiful-red-ranunculus-flower-sunlight.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    width: 96vw;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    font-size: .9rem;
+    color: var(--color-blanco);
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border: solid .1rem var(--color-morado);
+}
+span{
+    font-size: .9rem;
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: rgba(25, 16, 47, 0.421);
+}
+.presentacion{
+    background-color: rgba(25, 16, 47, 0.421);
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.nosotros img{
+    width: 20%;
+    height: auto;
+}
+.nosotros p{
+    padding: 0;
 }
 footer p{
     margin: 1rem;
