@@ -66,74 +66,16 @@
           <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
           <div class="card bg-glass">
             <div class="card-body px-4 py-5 px-md-5">
-              <form action="datos.php" method="post" >
-                <!-- 2 column grid layout with text inputs for the first and last names -->
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example1" class="form-control" />
-                      <label class="form-label" for="form3Example1">First name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example2" class="form-control" />
-                      <label class="form-label" for="form3Example2">Last name</label>
-                    </div>
-                  </div>
-                </div>
-  
-                <!-- Email input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
-                  <label class="form-label" for="form3Example3">Email address</label>
-                </div>
-                <!-- telefono input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="tel" id="form3Example3" class="form-control" />
-                    <label class="form-label" for="form3Example3">Movil</label>
-                  </div>
+            <?php
+// Verifica si el formulario ha sido enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Aquí puedes procesar los datos del formulario si es necesario
 
-  
-                <!-- Password input -->
-                <div class="mb-3">
-                    <textarea class="form-control" name="textarea" id="textarea" rows="3" placeholder="comiense aqui..."></textarea>
-                    <label for="textarea" class="form-label">Mensaje</label>
-                </div>
-  
-                <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-center mb-4">
-                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                  <label class="form-check-label" for="form2Example33">
-                    Subscribe to our newsletter
-                  </label>
-                </div>
-  
-                <!-- Submit button -->
-                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
-                  Enviar
-                </button>
-  
-                <!-- Register buttons -->
-                <div class="text-center">
-                  <p>Sigue nuestras redes sociales</p>
-                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-facebook-f"><a href="http://Facebook.com"><img src="img/f2.png" alt="ico-face"></a></i>
-                  </button>
-  
-                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                    <i class="fab"><a href="http://instagram.com"><img src="img/instagram.png" alt="ico-face"></a></i>
-                  </button>
-  
-                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                    <i class="fab"><a href="http://tiktok.com"><img src="img/tik-tok.png" alt="ico-face"></a></i>
-                  </button>
-  
-                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
-                    <i class="fab"><a href="http://youtuve.com"><img src="img/youtube.png" alt="ico-face"></a></i>
-                  </button>
-                </div>
-              </form>
+    // Mensaje de agradecimiento
+    echo "Gracias por llenar el formulario. En breve, un personal le atenderá.";
+}
+?>
+
             </div>
           </div>
         </div>

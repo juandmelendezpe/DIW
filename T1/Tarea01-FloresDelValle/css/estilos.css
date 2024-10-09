@@ -346,7 +346,7 @@ article{
 }
 .art2{
     width: 48vw;
-    height: 67vh;
+    height: 70vh;
     display: flex;
     justify-content:space-between;
 }
@@ -436,3 +436,82 @@ footer p{
     margin: 1rem;
 
 }
+/**--------------Pagina Plantas de exteriror-- */
+.section-container-interior{
+    width: 95%;
+    height: auto;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+}
+.aside-interior{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(128, 128, 128, 0.774);
+
+}
+.aside-mensaje-envio{
+    border-bottom: .2rem solid var(--color-azulPastel);   
+}
+.card-aside{
+    text-align: center;
+    border: none;
+    
+}
+.card-aside img{
+    width: 40%;
+    height: 10%;
+    object-fit: cover;
+    border-radius: 100%;
+
+}
+/**--------------Pagina contacto -- */
+.background-radial-gradient {
+    background-color: hsl(219, 40%, 30%);
+    
+    background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(218, 41%, 35%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(218, 41%, 45%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%);
+  }
+
+  #radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  #radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
