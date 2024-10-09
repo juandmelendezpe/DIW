@@ -137,7 +137,23 @@
         grid-template-columns: 1fr;
     }
  }
-*/
+    */
+   PARA monitores grandes
+ @media screen and (min-width: 768px) and (max-width: 1768px){
+    nav{
+        grid-template-columns: repeat(2,1fr);
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+    aside{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        grid-template-columns: 1fr;
+    }
+ 
+
 body{
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
