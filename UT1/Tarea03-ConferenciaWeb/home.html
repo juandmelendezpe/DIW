@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloConferencia.css">
+    <title>Conferencia</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo de la conferencia">
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="ponentes.html">Ponentes</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Optenga su entrada</h1>
+        <section>
+            <div class="banner">
+            </div>
+            <div class="formulario">
+                <form action="registro.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" required>
+                    <label for="asistente">Tipo de Cromosomas</label>
+                    <select name="sexo" id="sexo">
+                        <option value="1">XX</option>
+                        <option value="0">XY</option>
+                    </select>
+
+                    <label for="politicas">
+                    <input type="checkbox" name="politicas" id="politicas" required>Acepte nuestras politicas privacidad</label>
+                    <label for="politcasSeguridad">
+                    <input type="checkbox" name="politicasSeguridad" id="politicasSeguridad" required>
+                    Acepte nuestras politicas de seguridad</label>
+                    <button type="submit" value="Enviar"> Registrar </button>
+                </form>
+            </div>
+        </section>
+        <aside></aside>
+    </main>
+    <footer>
+        <p>Conferencia Web 2024</p>
+    </footer>
+</body>
+</html>
