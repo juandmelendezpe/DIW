@@ -34,9 +34,23 @@ nav ul li{
 nav a{
     color: white;
     text-decoration: none;
+    padding: 5px 10px;
+}
+nav a:hover{
+    color: #66cc77;
+    border:solid 1px #66cc77;
 }
 main{
     margin: 20px;
+}
+.titulo{
+    text-align: center;
+    font-size: 34px;
+    color: #66cc77;
+}
+h3{
+    text-align: center;
+    color:#66cc77;
 }
 section{
     background-color: white;
@@ -46,7 +60,7 @@ section{
     width: 90%;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 .banner{
@@ -59,6 +73,37 @@ section{
     width: 45%;
     height: 100%;
 }
+/* ARTICULO DEL CORONAGRAMA */
+.articulo{
+    width: 45%;
+    height: 100%;
+}
+.articulo h2{
+    color: #66cc77;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid #ccc;
+}
+th, td{
+    padding: 5px;
+    text-align: center;
+}
+th{
+    background-color: #66cc77;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #f0f0f0;
+}
+tr:nth-child(odd){
+    background-color: #f0f0f0;
+}
+/* FORMULARIO DE REGISTRO */
+
 .formulario{
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -85,10 +130,6 @@ button{
 }
 button:hover{
     background-color: #666;
-}
-
-h1{
-    color: #66cc77;
 }
 h2{
     color: #444;
