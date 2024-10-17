@@ -57,11 +57,15 @@ section{
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    width: 90%;
+    width: 70%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 5px auto;
+}
+#subtitulos{
+    text-align: center;
 }
 .banner{
     background-image: url(img/banner.png);
@@ -93,7 +97,7 @@ th, td{
     text-align: center;
 }
 th{
-    background-color: #66cc77;
+    background-color: #4bd462;
     color: white;
 }
 tr:nth-child(even){
@@ -110,10 +114,24 @@ tr:nth-child(odd){
     margin: 10px 0;
     padding: 10px;
 }
+#article-registro-form{
+   display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: auto;
+    margin: auto;
+}
+.section-background{
+    background: linear-gradient(45deg, #9949da, #66a6ee);
+
+}
 form{
-    background-image: linear-gradient(to circle, #222dcc, #165a1a);
     display: flex;
     flex-direction: column;
+    border: solid 1px #ccc;
+    padding: 2vw;
+    border-radius: 5px;
+    width: 35vw;
 }
 label{
     margin: 5px 0;
@@ -121,25 +139,45 @@ label{
 input{
     margin: 5px 0;
     padding: 5px;
+    width: 10vw;
 }
-button{
-    background-color: #444;
-    color: white;
+textarea{
     margin: 5px 0;
     padding: 5px;
+    width: 20vw;
+}
+select{
+    margin: 5px 0;
+    padding: 5px;
+    width: 10vw;
+}
+button{
+    background-color: #4bd462;
+    color: white;
+    margin: auto;
+    padding: 5px;
+    width: 10vw;
+    border-radius: 5px;
+
 }
 button:hover{
-    background-color: #666;
+    background-color: white;
+    color: #4bd462;
 }
 h2{
     color: #444;
 }
-aside{
+#ubicacion{
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: auto;
     padding: 10px;
+    width: 95vh;
+    height: auto;
+}
+iframe{
+    border: solid 1px #ccc;
 }
 footer{
     background-color: #333;
