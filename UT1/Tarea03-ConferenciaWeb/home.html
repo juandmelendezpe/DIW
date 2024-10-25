@@ -28,7 +28,7 @@
         <section>
             <article class="subtitulos">
                 <h2 id="subtitulos" >Acerca del Evento</h2>
-                <p>La conferencia web 2024 es un evento que reune a los mejores expertos en desarrollo web, donde se discutiran las ultimas tendencias y tecnologias en el desarrollo de aplicaciones web. No te lo pierdas.</p>
+                <p >La conferencia web 2024 es un evento que reune a los mejores expertos en desarrollo web, donde se discutiran las ultimas tendencias y tecnologias en el desarrollo de aplicaciones web. No te lo pierdas.</p>
             </article>
             <article id="tabla-Cronograma" >
                 <h2>Cronograma del Evento</h2>
@@ -62,13 +62,13 @@
                 <h2 id="subtitulos">Registro para el Evento</h2>
                 <form action="registro.php" method="post">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" required>
+                    <input type="text" name="nombre" id="nombre" placeholder="nombres" required>
                     <label for="apellidos">Apellidos:</label>
-                    <input type="text" name="apellidos" id="apellidos" required>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="apellidos" required>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" placeholder="email" required>
                     <label for="telefono">Teléfono:</label>
-                    <input type="tel" name="telefono" id="telefono" required>
+                    <input type="tel" name="telefono" id="telefono" placeholder="telefono" minlength="9" maxlength="9" required>
                     <label for="fechaNacimiento">Fecha de Nacimiento</label>
                     <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
                     <label for="color">Selecciona tu color favorito</label>
@@ -93,6 +93,7 @@
                     <input type="checkbox" name="politicasSeguridad" id="politicasSeguridad" required>
                     Acepte nuestras politicas de seguridad</label>
                     <button type="submit" value="Enviar"> Registrar </button>
+                    <button type="reset" value="Limpiar"> Limpiar </button>
                 </form>
             </article>
         </section>

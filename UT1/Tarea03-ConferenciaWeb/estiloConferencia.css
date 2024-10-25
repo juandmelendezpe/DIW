@@ -12,11 +12,18 @@ header{
     width: 100%;
     height: 50%;
 }
+header:hover{
+    background:linear-gradient(45deg, #9949da, #66a6ee);
+}
+
 .logo{
     display: inline-block;
+
 }
 .logo img{
     width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 .menu{
     background-color: #444;
@@ -67,6 +74,9 @@ section{
 #subtitulos{
     text-align: center;
 }
+.subtitulos > p{
+    color:rgb(85, 85, 198);;
+}
 .banner{
     background-image: url(img/banner.png);
     background-size: cover;
@@ -115,6 +125,7 @@ tr:nth-child(odd){
     padding: 10px;
 }
 #article-registro-form{
+    color: white;
    display: flex;
     flex-direction: column;
     width: 40vw;
@@ -183,11 +194,15 @@ iframe{
     border: solid 1px #ccc;
 }
 footer{
-    background-color: #333;
+    background:linear-gradient(45deg, #9949da, #66a6ee);
     color: white;
     padding: 10px 0;
     text-align: center;
 }
+footer:hover{
+    background:linear-gradient(45deg, #66a6ee, #9949da);
+}
+
 .rss{
     margin-top: 1rem;
     padding: 2px;
