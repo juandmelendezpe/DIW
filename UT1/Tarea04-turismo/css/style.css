@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@media (max-width: 600px) {
+    body{
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    main{
+        width: 50%;
+        height: 100%;
+    }
+    section{
+        width: 80%;
+        align-items: center;
+    } 
+
+    section  img{ 
+        width: 50.33%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1200px) {
+   main{
+       width: 80%;
+       height: 50%;
+       margin: auto;
+       border: solid 1px red;
+       text-align: center;
+   }
+   section img{ 
+       width: 33.33%;
+       align-items: center;
+     }
+ }
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(45deg, #9949da, #66a6ee);
+
+
+}
+header{
+    width: 65%;
+    height: 50vh;
+    background-image: url("https://www.avilaturismo.com/wp-content/uploads/Avila-panoramica-_N813334-35.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    align-items: center;
+    margin-top: 0;
+}
+header>h1 ,p{
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    font-size: 4em;
+}
+.menu{
+    background-color: #064c75;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav{
+    display: inline-block;
+}
+nav ul li{
+    display: inline;
+    margin: 0 50px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+nav a:hover{
+    
+    border:solid 1px rgb(255, 255, 255);
+    border-radius: 7px;
+}
+button{
+    text-align: center;
+    width: 10vw;
+    height: 5vh;
+    margin: auto;
+    align-items: center;
+    margin-left: 30%;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: #064c75;
+    border-radius: 10px;
+}
+main{
+    width: 100%;
+}
+section{
+    width: 50%;
+    border: solid 1px white;
+    height: 40vh;
+    align-items: center;
+    margin: auto;
+}
+section img{
+    width: 30%;
+    height: 60%;
+}
+footer{
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 255, 255, 0.397);
+}
