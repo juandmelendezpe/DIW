@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-@media (max-width: 600px) {
+/*
+PANTALLA DE 600PX -MOVIL
+*/
+@media (min-width:500px), (max-width: 600px) {
     body{
-       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        margin: 0;
+        padding: 0;
+        background:linear-gradient(45deg, #9949da, #e6e92d);
     }
     main{
         width: 50%;
@@ -18,8 +22,13 @@
         align-items: center;
     }
 }
-
-@media (max-width: 1200px) {
+/* PANTALLA DE 601 A 1200 - tablet */
+@media (min-width:601px), (max-width: 1200px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background:linear-gradient(45deg, #19ea58, #1e10a1);
+    }
    main{
        width: 80%;
        height: 50%;
@@ -32,13 +41,29 @@
        align-items: center;
      }
  }
-body{
-    margin: 0;
-    padding: 0;
-    background:linear-gradient(45deg, #9949da, #66a6ee);
+
+/* PANTALLA DE 1201 A 1600 - portatil/smart tv */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background:linear-gradient(45deg, #3c03da, #f46710);
+    }
+    main{
+        width: 80%;
+        height: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    section img{ 
+        width: 33.33%;
+        align-items: center;
+      }
+  }
 
 
-}
+
+
 header{
     width: 65%;
     height: 50vh;
@@ -62,23 +87,6 @@ h1{
     color: white;
     padding: 10px 0;
     text-align: center;
-}
-nav{
-    display: inline-block;
-}
-nav ul li{
-    display: inline;
-    margin: 0 50px;
-}
-nav a{
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-}
-nav a:hover{
-    
-    border:solid 1px rgb(255, 255, 255);
-    border-radius: 7px;
 }
 button{
     text-align: center;
@@ -105,12 +113,8 @@ section{
     align-items: center;
     margin: auto;
 }
-section img{
-    width: 30%;
-    height: 60%;
-}
 footer{
-    width: 100%;
-    height: 40%;
-    background-color: rgba(0, 255, 255, 0.397);
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(41, 83, 83);
 }
