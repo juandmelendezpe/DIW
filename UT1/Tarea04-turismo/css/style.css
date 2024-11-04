@@ -1,71 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-/*
-PANTALLA DE 600PX -MOVIL
-*/
-@media (min-width:500px), (max-width: 600px) {
-    body{
-        margin: 0;
-        padding: 0;
-        background:linear-gradient(45deg, #9949da, #e6e92d);
-    }
-    main{
-        width: 50%;
-        height: 100%;
-    }
-    section{
-        width: 80%;
-        align-items: center;
-    } 
-
-    section  img{ 
-        width: 50.33%;
-        align-items: center;
-    }
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* PANTALLA DE 601 A 1200 - tablet */
-@media (min-width:601px), (max-width: 1200px) {
-    body{
-        margin: 0;
-        padding: 0;
-        background:linear-gradient(45deg, #19ea58, #1e10a1);
-    }
-   main{
-       width: 80%;
-       height: 50%;
-       margin: auto;
-       border: solid 1px red;
-       text-align: center;
-   }
-   section img{ 
-       width: 33.33%;
-       align-items: center;
-     }
- }
 
-/* PANTALLA DE 1201 A 1600 - portatil/smart tv */
-@media (min-width: 1201px) and (max-width: 1600px) {
-    body{
-        margin: 0;
-        padding: 0;
-        background:linear-gradient(45deg, #3c03da, #f46710);
-    }
-    main{
-        width: 80%;
-        height: 50%;
-        margin: auto;
-        text-align: center;
-    }
-    section img{ 
-        width: 33.33%;
-        align-items: center;
-      }
-  }
-
-
-
-
+.menu{
+    width: 100%;
+    height: 10vh;
+}
 header{
-    width: 65%;
+    width: 100%;
     height: 50vh;
     background-image: url("https://www.avilaturismo.com/wp-content/uploads/Avila-panoramica-_N813334-35.jpg");
     background-repeat: no-repeat;
@@ -74,27 +20,49 @@ header{
     align-items: center;
     margin-top: 0;
 }
-header>h1 ,p{
-    color: white;
+
+header p{
     text-align: center;
-    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+main{
+    width: 100%;
+    height: 105vh;
+    display: inline-block;
+}
+
+section:hover{
+    background-color: rgba(43, 117, 47, 0.5);
+    border: solid 1px white;
+
+}
+section img{
+    width: 28vw;
+    height: 25vh;
 }
 h1{
-    font-size: 4em;
-}
-.menu{
-    background-color: #064c75;
-    color: white;
-    padding: 10px 0;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: .7rem;
+    padding: auto;
+    
 }
 button{
     text-align: center;
-    width: 10vw;
-    height: 5vh;
-    margin: auto;
+    width: 15vw;
+    height: 7vh;
     align-items: center;
-    margin-left: 30%;
     background-color: red;
     color: white;
     font-size: 1.2rem;
@@ -103,18 +71,197 @@ button:hover{
     background-color: #064c75;
     border-radius: 10px;
 }
-main{
-    width: 100%;
-}
-section{
-    width: 50%;
-    border: solid 1px white;
-    height: 40vh;
-    align-items: center;
-    margin: auto;
-}
 footer{
-    width: 100vw;
-    height: 20vh;
+    width: 100%;
+    height: 10vh;
     background-color: rgb(41, 83, 83);
+    text-align: center;
+    display: inline-block;
+}
+footer p{
+    text-align: center;
+    font-size: 1em;
+    margin: auto;
+    padding: 1vh;
+}
+/*
+PANTALLA DE 600PX -MOVIL
+*/
+@media  (max-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background:linear-gradient(45deg, #9949da, #e6e92d);
+        font-family: 'Roboto', sans-serif;
+
+    }
+   
+    h2{
+        text-align: center;
+        color: white;
+        font-size: 1.2em;
+    }
+    h1{
+    font-size: 1.5em ;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: .9rem;
+        padding: 1vw;
+    }
+    #articleUno{ 
+        width: 95%;
+        height: 170vh;
+        display: inline-block;
+        margin: 2vw;
+        padding: 1vw;
+        border: solid 1px white;
+        margin-bottom: 7%;
+
+    }
+    #articleDos ,#articleTres{ 
+        width: 95%;
+        height: 80vh;
+        display: inline-block;
+        margin: 2vw;
+        margin-bottom: 7%;
+    }
+    section{
+        width: 95vw;
+        height: 80vh;
+        box-shadow: 0 0 7px 7px rgba(43, 117, 47, 0.5);
+        padding: .7vw;
+        display: inline-block;
+        border-radius: .7rem;
+        margin: auto;
+        
+    }
+    section:hover{
+        background-color: rgba(43, 117, 47, 0.5);
+        border: solid 1px white;
+
+    }
+    section img{
+        width: 90%;
+        height: 50vh;
+        margin: 1.5vw;
+    }
+ 
+    main{
+        width: 100%;
+        height: 355vh;
+        display: inline-block;
+    }
+    #muralla{
+        margin-bottom: 7%;
+    }
+    #gastronomia{
+        margin-bottom: 7%;
+    }
+}
+/* PANTALLA DE 601 A 1200 - tablet */
+@media (min-width:600px) and (max-width: 1200px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background:linear-gradient(45deg, #9949da, #e6e92d);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h2{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: .9rem;
+        padding: 1vw;
+    }
+    #articleUno{ 
+        width: 95%;
+        height: 82vh;
+        display: inline-block;
+        margin: 4vw;
+        padding: 1vw;
+        border: solid 1px white;
+        margin: auto;
+
+    }
+    #articleDos ,#articleTres{ 
+        width: 45%;
+        height: 30vh;
+        display: inline-block;
+        margin: 2vw;
+    }
+    section{
+        width: 45vw;
+        height: 80vh;
+        box-shadow: 0 0 7px 7px rgba(43, 117, 47, 0.5);
+        padding: .7vw;
+        display: inline-block;
+        border-radius: .7rem;
+        margin: auto;
+        
+    }
+    section:hover{
+        background-color: rgba(43, 117, 47, 0.5);
+        border: solid 1px white;
+
+    }
+    section img{
+        width: 40vw;
+        height: 30vh;
+        margin: 1.5vw;
+    }
+    main{
+        width: 100%;
+        height: 170vh;
+        display: inline-block;
+    }
+   
+}
+
+/* PANTALLA DE 101 A 3600 - portatil/smart tv */
+@media (min-width: 1201px) and (max-width: 3600px) {
+    body{
+        margin: 0;
+        padding: 0;
+        background:linear-gradient(45deg, #9949da, #e6e92d);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #articleUno{ 
+        width: 63vw;
+        height: 45vh;
+        display: inline-block;
+        margin: 1vw;
+
+    }
+    #articleDos ,#articleTres{ 
+        width: 30vw;
+        height: 45vh;
+        display: inline-block;
+        margin: 1vw;
+    }
+    section{
+        width: 30vw;
+        height: 45vh;
+        box-shadow: 0 0 7px 7px rgba(43, 117, 47, 0.5);
+        padding: .7vw;
+        display: inline-block;
+        border-radius: .7rem;
+        
+    }
+    section:hover{
+        background-color: rgba(43, 117, 47, 0.5);
+        border: solid 1px white;
+
+    }
+    section img{
+        width: 28vw;
+        height: 25vh;
+    }
+   
 }
