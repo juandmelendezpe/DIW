@@ -1,0 +1,109 @@
+body {
+    font-family: Arial;
+}
+#cursos-avanzados li strong, #como-estudiar li strong {
+  color: purple;
+}
+@media (min-width: 1201px) {
+  #ciclos {
+    float: left;
+	  width: 30%;
+  }
+  #bloque2 {
+    float: left;
+	  width: 70%;
+  }
+  #cursos-avanzados {
+    float: left;
+	  width: 50%;
+  }
+  #como-estudiar {
+    float: left;
+	  width: 50%;  
+  }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+  #como-estudiar li strong {
+    text-decoration: underline;
+  }
+  #ciclos {
+    float: left;
+	  width: 30%;
+  }
+  #bloque2 {
+    float: left;
+	  width: 70%;
+  }
+  #ciclos ul {
+    list-style-type: none;
+	  padding: 0;
+  }
+  
+  #ciclos li + li {
+    margin-top: 10px;
+  }
+
+  #ciclos li strong {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-family: "Times New Roman";
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+	  border-bottom: 1px solid #000;
+  }
+  
+  ul {
+    list-style-type: none;
+	  padding: 0;
+  }
+  
+  li + li {
+    margin-top: 10px;
+  }
+
+  li strong {
+    display: block;
+  }
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.btn-normal {
+    background-color: #3498db;
+    color: white;
+}
+.btn-outline {
+    border: 2px solid #3498db;
+    background: transparent;
+    color: #3498db;
+}
+.btn-alert {
+    background-color: #e74c3c;
+    color: white;
+}
+.btn-normal:hover,
+.btn-outline:hover,
+.btn-alert:hover {
+    transform: scale(1.1);
+}
+.btn-normal {
+    cursor: crosshair;
+}
+.btn-outline {
+    cursor: pointer;
+}
+.btn-alert {
+    cursor: help;
+}

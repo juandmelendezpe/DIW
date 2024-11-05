@@ -116,7 +116,6 @@ PANTALLA DE 600PX -MOVIL
         display: inline-block;
         margin: 2vw;
         padding: 1vw;
-        border: solid 1px white;
         margin-bottom: 7%;
 
     }
@@ -136,11 +135,6 @@ PANTALLA DE 600PX -MOVIL
         border-radius: .7rem;
         margin: auto;
         
-    }
-    section:hover{
-        background-color: rgba(43, 117, 47, 0.5);
-        border: solid 1px white;
-
     }
     section img{
         width: 90%;
@@ -185,7 +179,6 @@ PANTALLA DE 600PX -MOVIL
         display: inline-block;
         margin: 4vw;
         padding: 1vw;
-        border: solid 1px white;
         margin: auto;
 
     }
@@ -204,11 +197,6 @@ PANTALLA DE 600PX -MOVIL
         border-radius: .7rem;
         margin: auto;
         
-    }
-    section:hover{
-        background-color: rgba(43, 117, 47, 0.5);
-        border: solid 1px white;
-
     }
     section img{
         width: 40vw;
@@ -253,11 +241,6 @@ PANTALLA DE 600PX -MOVIL
         display: inline-block;
         border-radius: .7rem;
         
-    }
-    section:hover{
-        background-color: rgba(43, 117, 47, 0.5);
-        border: solid 1px white;
-
     }
     section img{
         width: 28vw;
