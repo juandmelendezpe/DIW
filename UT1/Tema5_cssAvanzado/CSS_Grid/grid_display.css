@@ -1,0 +1,6 @@
+.contenedor{
+    display: inline-grid;
+  }
+  .contenedor2{
+    display: grid;
+  }
