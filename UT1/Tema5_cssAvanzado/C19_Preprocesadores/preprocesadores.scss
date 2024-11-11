@@ -1,0 +1,34 @@
+$font-stack: Helvetica, sans-serif; 
+$primary-color: #333; 
+
+body {   
+     font:  $font-stack;   
+     color: $primary-color; 
+}
+nav { 
+    ul { 
+        margin: 0; 
+        padding: 0; 
+        list-style: none; 
+    } 
+    li { 
+        display: inline-block; 
+        
+    } 
+}
+article { 
+    float: left; 
+    width: 600px / 960px * 100%; 
+} 
+aside { 
+    float: right; 
+    width: 300px / 960px * 100%; 
+}
+@mixin transform($property) { 
+    -webkit-transform: $property; 
+    -ms-transform: $property; 
+    transform: $property;
+} 
+.box { 
+    @include transform(rotate(30deg)); 
+}

@@ -1,0 +1,38 @@
+main{display:inline-flex;}
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.container-1{
+      filter: brightness(0.4);
+}
+.container-2{
+      filter: contrast(0.2);
+}
+.container-3{
+      filter: grayscale(0.5);
+}
+.container-4{
+      filter: hue-rotate(90deg);
+}
+.container-5{
+      filter: invert(1);
+}
+.container-6{
+      filter: opacity(0.6);
+}
+.container-7{
+      filter: saturate(20%);
+}
+.container-8{
+      filter: sepia(1);
+}
+.filtro{
+    filter: grayscale(100%);
+  }
