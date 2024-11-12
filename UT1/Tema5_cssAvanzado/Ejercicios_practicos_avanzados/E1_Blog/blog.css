@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #425067;
+        
+    }
+    .contenedorPrincipal{
+        width: 1000px;
+        margin:0 auto;
+        
+    }
+    header{
+        background-color: #eeeeee;
+       /* overflow: hidden; /* Para limpiar los float: La técnica de corregir los problemas creados por los elementos posicionados de forma flotante se suele denominar "limpiar los float". Esto lo usaríamos si no pusiéramos el valor height: 48px */
+        width: 100%;
+        height: 48px;
+      }
+    header nav ul li{
+        list-style-type: none;
+        float: left;
+      }
+      header nav ul li a{
+        text-decoration: none;
+        padding: 15px 20px 15px 20px;
+        display: inline-block;
+        color: #2d3646;
+      }
+      header nav ul li a:hover{
+        background-color: #e52f6e;
+        color: white;
+      }
+    main{
+        clear: both;
+        background-color: white;
+        width: 70%;
+        float: left;
+    }
+    main img{
+        max-width: 100%;
+    }
+    main section{
+        padding: 30px;
+    }
+    main section p{
+        text-align: justify;
+        margin: 16px;
+        line-height: 1.5em;
+    }
+    main h1{
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+    aside{
+        width: 30%;
+        float: right;
+        background-color: #25d6c8;
+        padding: 30px;
+    }
+    aside ul li{
+        list-style-type: none;
+        margin-bottom:  16px;
+        text-decoration: none;
+        border-bottom: solid 1px black;
+    }
+    aside ul li:hover{
+        color: #425067;
+      }
+
+    aside h2{
+        color: black;
+        margin-bottom: 20px;
+        font-size: 1.4em;
+    }
+    
+    footer{
+        clear: both;
+        width: 70%;
+        padding: 60px;
+        background-color: #e52f6e;
+    }
+    footer p {
+        color: white;
+        text-align: center;
+    }
+    @media (max-width: 800px) {
+        main{
+          width:100%;
+          display:block;
+        }
+        aside{
+          width: 100%;
+          display:block;
+        }
+        footer{
+          width: 100%;
+          display: block;
+        }
+      }
