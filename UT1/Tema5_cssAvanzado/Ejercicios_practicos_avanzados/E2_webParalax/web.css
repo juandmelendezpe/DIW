@@ -53,7 +53,7 @@ nav li a:hover{
      color: #5E5D6E;
 }
 .parallax {
-     background-image: url("https://www.eniun.com/wp-content/uploads/eniun-home-historia.jpg");
+     background-image: url("./img/3d-space-scene.jpg");
      height: 400px; 
      background-attachment: fixed;
      background-position: center;
