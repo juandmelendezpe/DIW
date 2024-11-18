@@ -1,0 +1,204 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container-center {
+    display: flex; /* Se define un contenedor flex */
+    justify-content: space-between; /* Los elementos hijos se distribuyen con espacio entre ellos */
+  }
+  
+  header h1 {
+    font-size: 28px;
+    margin-top: 4px;
+    align-items: center; /* Alinea el contenido de los elementos hijos en el centro verticalmente */
+  }
+  
+  nav {
+    display: flex; /* Se define un contenedor flex para alinear los elementos horizontalmente */
+    align-items: center; /* Centra los elementos dentro del eje principal */
+  }
+  
+  nav a, nav button {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav button {
+    background-color: #f9f9f9;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  nav button+button {
+    display: none;
+  }
+  
+  nav button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .cta {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #e6e6e6;
+  }
+  
+  .cta p {
+    margin: 20px 0;
+  }
+  
+  .cta button {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  
+  .cta button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black; 
+  }
+  
+  .newsletter-fullwidth {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .newsletter-content {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .newsletter-fullwidth h2, .newsletter-fullwidth p {
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  label {
+    display: flex;
+    margin: 5px 0px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  .newsletter-fullwidth button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  
+  .newsletter-fullwidth button:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    display: flex; /* Se convierte en contenedor flex */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+  }
+  
+  footer .container-center {
+      max-width: 1200px;
+      /*margin: 0 auto; No hace falta porque hemos puesto en el contenedor padre justify-content: center */
+      display: flex; /* Se define un contenedor flex para organizar los elementos */
+      justify-content: space-between; /* Los elementos se distribuyen con espacio entre ellos */
+      flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas si es necesario */
+      width: 100%;
+  }
+  
+  footer .container-center div {
+      display: flex; /* Contenedor flex para organizar los elementos hijos verticalmente */
+      flex-direction: column; /* Organiza los elementos en una columna */
+      text-align: center;
+  }
+  
+  footer h2, footer h3 {
+    font-size: 28px;
+    margin: 30px 0;
+  }
+  
+  footer p, footer a {
+    margin: 7px 0;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: gray;
+  }
+  
+  @media (max-width: 800px) {
+    nav a {
+      display: none;
+    }
+    nav button:nth-child(5) {
+      display: none;
+    }
+    nav button+button {
+      display: flex;
+    }
+    header .container-center{
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+    }
+    .newsletter-fullwidth {
+      box-sizing: border-box;
+    }
+    .newsletter-content {
+      max-width: 800px;
+      border-radius: 0px;
+      background-color: #f9f9f9;
+      box-shadow: 0 0px 0px;
+      padding: 30px;
+    }
+    footer .container-center {
+      flex-direction: column; /* Cambia la dirección del contenedor flex a columna en pantallas pequeñas */
+    }
+    footer .container-center div {
+      width: 100%; /* Los elementos hijos ocupan el 100% del ancho disponible */
+    }
+  }

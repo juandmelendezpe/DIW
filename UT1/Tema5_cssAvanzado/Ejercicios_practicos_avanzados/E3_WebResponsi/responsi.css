@@ -1,4 +1,5 @@
 *{
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,26 +8,54 @@
     header{
         width: 100%;
         background-color: rgb(189, 187, 187);
-
-
     }
     .container-center{
-        display:block;
+        display:inline-block;
         width: 100%;
-        margin: 0px auto;
+        height: 20%;
+        padding: 5%;
+    }
+    .tituloMenu{
+        width: 30%;
+        height: 100%;
+        display:inline-block;
     }
     .container-center nav{
-        visibility: hidden;
+        width: 65%;
+        display: inline-block;
+    }
+    .container-center nav a, .boton{
+        display: none;
         
     }
-    .container-center  bottom:nth-child(2){
+    .botonMenu{
+        width: 45%;
+        padding: 7px 20px;
+        border-radius: 10px;
+        background-color: blueviolet;
+        color: white;
         display: inline-block;
         
     }
+    .botonMenu:hover{
+        background-color: brown;
+        color: aliceblue;
+    }
+   
     main{
         width: 100%;
         height: auto;
         background-color:white;
+        }
+        section{
+            width: 100%;
+            height: 200%;
+            display: block;
+            margin: auto;
+            background-color: gray;
+            text-align: center;
+            padding: 5%;
+
         }
         section button:hover{
             background: rgb(105, 90, 238);
@@ -34,7 +63,7 @@
             border: solid 1px black;
         }
         section button{
-            width: 15vw;
+            width: 120px;
             height: 7vh;
             border-radius: 10px;
             border: none;
@@ -44,8 +73,8 @@
             color: white;
         }
         .cta2{
-            width: 40vw;
-            height: 35vh;
+            width: 80%;
+            height: 80%;
             display: block;
             margin-bottom: 5%;
             background-color: white;
@@ -81,10 +110,9 @@
             height: 7vh;
           
         }
-        form > button{
+       section form > button{
             display: block;
             width: 90%;
-            height: 3vh;
         
         }
         
@@ -96,22 +124,24 @@
         }
         
         .container-center-footer{
-            width: 80%;
-            height: 25vh;
+            width: 100%;
             display: block;
             color: white;
             margin: auto;
             
         }
         .container-center-footer > div{
-            text-align: left;
-            width: 15%;
-            display:inline-block ;
+            width: 30%;
+            display:block ;
             margin: 1%;
-            padding: 2%;
+            padding: 5%;
+            margin: inherit;
         }
-        
-    
+        .container-center-footer div a{
+            width: 100%;
+            display: block;
+            text-decoration: none;
+        }
 }
 @media (min-width:800px) {
     
@@ -124,8 +154,6 @@ header{
     padding: 20px 0 20px 0;
     text-align: center;
     background-color: rgb(189, 187, 187);
-    
-    
 }
 .container-center{
     display: inline-block;
@@ -146,7 +174,6 @@ header{
     float: right;
     margin: auto;
 }
-
 .container-center nav a {
     text-decoration: none;
     color: white;
@@ -155,7 +182,6 @@ header{
     border-radius: 10px;
     margin: auto;
     align-items: center;
-    
 }
 .container-center nav a:hover{
     background-color: aquamarine;
@@ -168,16 +194,13 @@ header{
     margin: 1em;
     background-color: blueviolet;
     color: white;
-    
 }
 .container-center nav button:hover{
     background-color: brown;
     color: aliceblue;
 }
 main{
-width: 100%;
-height: auto;
-background-color:white;
+    width: 100%;
 }
 section{
     width: 100%;
@@ -186,14 +209,10 @@ section{
     margin: auto;
     background-color: gray;
     text-align: center;
-}
-section button:hover{
-    background: rgb(105, 90, 238);
-    color: black;
-    border: solid 1px black;
+    padding: 5%;
 }
 section button{
-    width: 15vw;
+    width: 120px;
     height: 7vh;
     border-radius: 10px;
     border: none;
@@ -202,16 +221,22 @@ section button{
     background-color: black;
     color: white;
 }
+section button:hover{
+    background: rgb(105, 90, 238);
+    color: black;
+    border: solid 1px black;
+}
 .cta2{
-    width: 40vw;
-    height: 35vh;
+    width: 50%;
+    height: 50%;
     display: block;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     background-color: white;
     box-shadow: 1px 1px 7px 7px gray;
+    box-shadow: 0 4px 8px rgba(219, 26, 26, 0.1);
     border-radius: 7px;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .cta h2{
     margin: 2px;
@@ -238,37 +263,37 @@ form  input{
     display: block;
     width: 90%;
     height: 7vh;
-  
+
 }
 form > button{
     display: block;
     width: 90%;
     height: 3vh;
-
 }
-
 footer{
-    margin-top: auto;
     width: 100%;
+    height: auto;
     color: white;
     background-color: black;
 }
-
 .container-center-footer{
     width: 80%;
-    height: 25vh;
+    height: 100%;
     display: block;
     color: white;
     margin: auto;
-    
 }
-.container-center-footer > div{
-    text-align: left;
-    width: 15%;
+.container-center-footer  div{
+    width: 18%;
+    height: 150px;
     display:inline-block ;
-    margin: 1%;
-    padding: 2%;
+    padding: 1%;
+    margin: 5px;
+    text-align: center;
 }
-
-
+.container-center-footer div a{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
 }
