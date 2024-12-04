@@ -1,0 +1,127 @@
+// importar fuente fe google fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500');
+
+
+// Definición de variables
+ // para el tamaño de fuente
+$font-sizes:(
+  "cuerpo": 3rem,
+  "h1":150%,
+  "h2": 120%,
+  "h3": 110%,
+  "nav ul li" : 110%,
+  "footer p": 90%
+);
+// para el grosor de la fuente
+$font-weights:(
+  "light": 300,
+  "regular": 400,
+  "bold": 700
+);
+// tipo de letra
+$font-family: 'Nunito', sans-serif;
+
+//ancho maximo de la pagina
+$ancho-maximo: 1400px;
+
+// margen por defecto
+$margin-defaul: 0;
+
+//padding por defecto
+$padding-defaul: 0;
+
+// colores
+$default-background-color: #f8f8f8;
+$default-foregraund-color: #333;
+
+//ahora vamos a crear variables compuestas
+$cuerpo: map-get($font-sizes , "cuerpo") map-get($font-weights, "regular") $font-family;
+// estilos de pagina
+html{
+  max-width: $ancho-maximo;
+  margin: 0 auto;
+}
+body{
+  font: $cuerpo;
+  color: $default-foregraund-color;
+  background-color: $default-background-color;
+  margin: $margin-defaul;
+  padding: $padding-defaul;
+}
+h{
+  &1{
+    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}) )$font-family;
+  }
+  &2{
+    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}) )$font-family;
+  }&3{
+    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}) )$font-family;
+  }
+}
+a{
+  text-decoration: none;
+  color: $default-foregraund-color;
+}
+//headerr
+header{
+  text-align: center;
+  background-color: $default-background-color;
+  padding: 0.5em;
+
+  h1,h2{
+    width: 90%;
+    margin: $margin-defaul;
+  }
+}
+nav{
+  background-color: $default-background-color;
+  padding: 0.1em;
+  margin: 0.5em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  ul{
+    list-style: none;
+    padding: 0.2em;
+    margin: $margin-defaul;
+    li{
+      display: inline-block;
+      margin: 0.2em;
+      font: map-get($font-weights, "bold") map-get($font-sizes, "nav ul li") $font-family;
+
+      a{
+        font-weight: map-get($font-weights, "regular");
+        &:hover{
+          color: darken($default-foregraund-color, 10%);
+        }
+      }
+    }
+  }
+}
+//secciones
+section{
+
+  min-height: 20em;
+
+}
+//pie de pagina
+footer{
+  text-align: center;
+  div{
+    background-color: $default-background-color;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    img{
+      width: 2em;
+      height: 2em;
+      margin: 0.5em;
+      a{
+        &:hover{
+          color: darken($default-foregraund-color, 10%);
+
+      }
+    }
+  }
+}
+}
+
+

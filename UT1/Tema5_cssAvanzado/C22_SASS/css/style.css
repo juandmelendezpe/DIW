@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,500");
+html {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font: 3rem 400 "Nunito", sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font: 700 150% "Nunito", sans-serif;
+}
+h2 {
+  font: 700 120% "Nunito", sans-serif;
+}
+h3 {
+  font: 700 110% "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 0.5em;
+}
+header h1, header h2 {
+  width: 90%;
+  margin: 0;
+}
+
+nav {
+  background-color: #f8f8f8;
+  padding: 0.1em;
+  margin: 0.5em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+nav ul {
+  list-style: none;
+  padding: 0.2em;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0.2em;
+  font: 700 110% "Nunito", sans-serif;
+}
+nav ul li a {
+  font-weight: 400;
+}
+nav ul li a:hover {
+  color: rgb(25.5, 25.5, 25.5);
+}
+
+section {
+  min-height: 20em;
+}
+
+footer {
+  text-align: center;
+}
+footer div {
+  background-color: #f8f8f8;
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+footer div img {
+  width: 2em;
+  height: 2em;
+  margin: 0.5em;
+}
+footer div img a:hover {
+  color: rgb(25.5, 25.5, 25.5);
+}
+
+/*# sourceMappingURL=style.css.map */
