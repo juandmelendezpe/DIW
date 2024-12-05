@@ -13,13 +13,13 @@ body {
 }
 
 h1 {
-  font: 700 150% "Nunito", sans-serif;
+  font: 700 "Nunito", sans-serif;
 }
 h2 {
-  font: 700 120% "Nunito", sans-serif;
+  font: 700 "Nunito", sans-serif;
 }
 h3 {
-  font: 700 110% "Nunito", sans-serif;
+  font: 700 "Nunito", sans-serif;
 }
 
 a {
@@ -35,6 +35,17 @@ header {
 header h1, header h2 {
   width: 90%;
   margin: 0;
+}
+header a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header a img {
+  width: 10%;
+  height: 10%;
+  margin: 0.5em;
 }
 
 nav {
@@ -58,7 +69,7 @@ nav ul li a {
   font-weight: 400;
 }
 nav ul li a:hover {
-  color: rgb(25.5, 25.5, 25.5);
+  color: #ff00ff;
 }
 
 section {
@@ -76,10 +87,14 @@ footer div {
 footer div img {
   width: 2em;
   height: 2em;
-  margin: 0.5em;
+  margin: 0.8em;
+}
+footer div img:hover {
+  border-radius: 50%;
+  border: solid 2px #ff00ff;
 }
 footer div img a:hover {
-  color: rgb(25.5, 25.5, 25.5);
+  color: #333;
 }
 
 /*# sourceMappingURL=style.css.map */

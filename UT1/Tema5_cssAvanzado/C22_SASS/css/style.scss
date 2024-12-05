@@ -33,6 +33,7 @@ $padding-defaul: 0;
 // colores
 $default-background-color: #f8f8f8;
 $default-foregraund-color: #333;
+$funchsia: #ff00ff;
 
 //ahora vamos a crear variables compuestas
 $cuerpo: map-get($font-sizes , "cuerpo") map-get($font-weights, "regular") $font-family;
@@ -50,12 +51,13 @@ body{
 }
 h{
   &1{
-    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}) )$font-family;
+    font: map-get($font-weights, "bold")$font-family;
   }
   &2{
-    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}) )$font-family;
-  }&3{
-    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}) )$font-family;
+    font: map-get($font-weights, "bold")$font-family;
+  }
+  &3{
+    font: map-get($font-weights, "bold")$font-family;
   }
 }
 a{
@@ -72,7 +74,21 @@ header{
     width: 90%;
     margin: $margin-defaul;
   }
+  a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    img{
+      width: 10%;
+      height: 10%;
+      margin: 0.5em;
+    }
+  }
 }
+
 nav{
   background-color: $default-background-color;
   padding: 0.1em;
@@ -91,7 +107,7 @@ nav{
       a{
         font-weight: map-get($font-weights, "regular");
         &:hover{
-          color: darken($default-foregraund-color, 10%);
+          color:$funchsia;
         }
       }
     }
@@ -113,10 +129,15 @@ footer{
     img{
       width: 2em;
       height: 2em;
-      margin: 0.5em;
+      margin: .8em;
+      &:hover{
+        border-radius: 50%;
+        border: solid 2px $funchsia;
+      }
+
       a{
         &:hover{
-          color: darken($default-foregraund-color, 10%);
+          color: $default-foregraund-color;
 
       }
     }
