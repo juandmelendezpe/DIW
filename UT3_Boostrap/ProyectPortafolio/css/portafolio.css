@@ -8,7 +8,60 @@ html, body {
     height: 100%;
     margin: 0;
 }
+/*estilos generales*/
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80%;
+    background-image: url("https://i.pinimg.com/originals/83/be/32/83be325e2d434d410339a95622877f70.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+    
+}
+.presentacion{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 10% 20px; ;
+}
+.titulo{
+    margin-bottom: 10px;
+}
+.titulo h1{
+    
+    font-size: 10rem;
+}
+.subtitulo{
+    margin-bottom: 10px;
+    padding: 1%;
+}
+.img-perfil{
+    width: 30vw;
+    height: 55vh;
+    border-radius: 10px;
+    background-image: url("https://img.freepik.com/fotos-premium/astronauta-computadora-render-3-d_912214-5478.jpg?w=826");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 10px -50px 10px ;
+    margin-top: 5vh;
+    padding: 1%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    margin-top: 5vh;
+    padding: 1%;
 
+}
+.img-perfil:hover{
+    border: solid 2px white;
+}
 body {
     display: flex;
     flex-direction: column;
