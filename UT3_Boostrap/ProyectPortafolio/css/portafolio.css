@@ -4,6 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --bg-color: #fff;
+    --text-color: #fff;
+    --header-link-color: #8fabc5;
+    --bg-input-color: #4267b2;
+    --bg-input1-color: #0ec155;
+    --header-bor-submit-color: #29487d;
+    --main-grad-bg-color: #d3d8e8;
+    --main-image-text-color: #0e385f;
+    --blue: #23aaff;
+    --purple: #4562f2;
+    --pink: #7a45f8;
+    --coral: #bb0bf6;
+    --orange: #fc2953;
+    --yellow: #ffc743;
+    --bg: #000000;
+  }
 html, body {
     height: 100%;
     margin: 0;
@@ -35,6 +52,36 @@ main{
 .titulo{
     margin-bottom: 10px;
 }
+/*  efectos del titulo
+.efecto-titulo h1{
+    display: inline;
+    letter-spacing: 2px;
+    font-size: 4.8rem;
+    background-image: linear-gradient(
+      45deg,
+      var(--blue) 10%,
+      var(--purple) 20%,
+      var(--pink) 36%,
+      var(--coral) 52%,
+      var(--orange) 69%,
+      var(--yellow) 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 100%;
+    opacity: 1;
+    animation: stripes 3s ease-in-out infinite;
+  }
+  /*
+  @keyframes stripes {
+    100% {
+      opacity: 1;
+      background-position: 0 -10px;
+    }
+      
+  }*/
+  
 .titulo h1{
     
     font-size: 10rem;
@@ -59,9 +106,6 @@ main{
     padding: 1%;
 
 }
-.img-perfil:hover{
-    border: solid 2px white;
-}
 body {
     display: flex;
     flex-direction: column;
@@ -77,9 +121,7 @@ header{
     align-items: center;
     flex-direction: column;
 }
-header:hover{
-    background:linear-gradient(45deg, #8a12ed, #6eaef8);
-}
+
 .logo{
     display: inline-block;
     margin-top: 3vh;
@@ -97,12 +139,60 @@ header:hover{
 }
 
 main {
-    flex: 1;
+    display: flex;
+    
 }
+/**--------------Pagina contacto -- 
+.background-radial-gradient {
+    background-color: hsl(219, 40%, 30%);
+    
+    background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(218, 41%, 35%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(218, 41%, 45%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%);
+  }
+
+  #radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  #radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
+.mainContainer-Contacto{
+    width: 100%;
+    height: 80%;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+*/
 
 /*footer*/
 
-footer {
+footer{
     display: flex;
     flex-direction: column;
     width: 100%;
