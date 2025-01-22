@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color: #fff;
+    --text-color: #fff;
+    --header-link-color: #8fabc5;
+    --bg-input-color: #4267b2;
+    --bg-input1-color: #0ec155;
+    --header-bor-submit-color: #29487d;
+    --main-grad-bg-color: #d3d8e8;
+    --main-image-text-color: #0e385f;
+    --blue: #23aaff;
+    --purple: #4562f2;
+    --pink: #7a45f8;
+    --coral: #bb0bf6;
+    --orange: #fc2953;
+    --yellow: #ffc743;
+    --bg: #000000;
+  }
+/*estilos generales*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    height: 300%;
+    background-image: url("https://i.pinimg.com/originals/83/be/32/83be325e2d434d410339a95622877f70.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    
+}
+.presentacion{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 10% 20px; ;
+}
+.titulo{
+    margin-bottom: 10px;
+}
+/*  efectos del titulo
+.efecto-titulo h1{
+    display: inline;
+    letter-spacing: 2px;
+    font-size: 4.8rem;
+    background-image: linear-gradient(
+      45deg,
+      var(--blue) 10%,
+      var(--purple) 20%,
+      var(--pink) 36%,
+      var(--coral) 52%,
+      var(--orange) 69%,
+      var(--yellow) 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 100%;
+    opacity: 1;
+    animation: stripes 3s ease-in-out infinite;
+  }
+  /*
+  @keyframes stripes {
+    100% {
+      opacity: 1;
+      background-position: 0 -10px;
+    }
+      
+  }*/
+  
+.titulo h1{
+    
+    font-size: 10rem;
+}
+.subtitulo{
+    margin-bottom: 10px;
+    padding: 1%;
+}
+.img-perfil{
+    width: 30vw;
+    height: 55vh;
+    border-radius: 10px;
+    background-image: url("https://img.freepik.com/fotos-premium/astronauta-computadora-render-3-d_912214-5478.jpg?w=826");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 10px -50px 10px ;
+    margin-top: 5vh;
+    padding: 1%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    margin-top: 5vh;
+    padding: 1%;
+
+}
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    display: inline-block;
+    margin-top: 3vh;
+
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/*menu*/
+.menu-item:hover{
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+/**--------------Pagina contacto -- 
+.background-radial-gradient {
+    background-color: hsl(219, 40%, 30%);
+    
+    background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(218, 41%, 35%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(218, 41%, 45%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%);
+  }
+
+  #radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  #radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
+.mainContainer-Contacto{
+    width: 100%;
+    height: 80%;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+*/
+
+/*footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px !important;
+    text-align: center;
+    background-color: #333;
+    color: white;
+  }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+
+  }
+  footer div img{
+    width: 3vw;
+    height: 3vw;
+    margin: 0 0.5em;
+  }
+  footer p {
+    font: 300 "Nunito", sans-serif;
+  }
+  footer p a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  
+/* pages contact */
+
+.presentacion_contact{
+    width: 50vw;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 5% auto;
+    padding: 2%;
+}
+
+/*pages portfolio*/
+
+.presentacion_portfolio{
+    width: 95vw;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 5% auto;
+    padding: 2%;
+}
+i{
+  margin:  auto 0.5em;
+}
+/*pages about*/
+.presentacion_about{
+    width: 95vw;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 5% auto;
+    padding: 2%;
+}
+
+/* pages services */
+.presentacion_services{
+    width: 95vw;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.329);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 5% auto;
+    padding: 2%;
+}
+.presentacion_services h2{
+    font-weight: bold;
+    text-align: left;
+}
+
