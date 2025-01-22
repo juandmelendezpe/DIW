@@ -31,17 +31,27 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+header{
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100vw;
-    height: 300%;
     background-image: url("https://i.pinimg.com/originals/83/be/32/83be325e2d434d410339a95622877f70.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    height: 90vh;
 
     
 }
@@ -111,17 +121,6 @@ main{
     margin-top: 5vh;
     padding: 1%;
 
-}
-header{
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .logo{
@@ -223,7 +222,7 @@ footer{
 
 .presentacion_contact{
     width: 50vw;
-    height: 80%;
+    height: 65vh;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     color: white;
@@ -231,13 +230,14 @@ footer{
     font-weight: 500;
     margin: 5% auto;
     padding: 2%;
+    border: solid 1px white;
 }
 
 /*pages portfolio*/
 
 .presentacion_portfolio{
     width: 95vw;
-    height: 80%;
+    height: 65vh;
     background-color: rgba(255, 255, 255, 0.329);
     border-radius: 10px;
     color: white;
@@ -252,7 +252,7 @@ i{
 /*pages about*/
 .presentacion_about{
     width: 95vw;
-    height: 80%;
+    height: 65vh;
     background-color: rgba(255, 255, 255, 0.329);
     border-radius: 10px;
     color: white;
@@ -265,7 +265,7 @@ i{
 /* pages services */
 .presentacion_services{
     width: 95vw;
-    height: 80%;
+    height: 65vh;
     background-color: rgba(255, 255, 255, 0.329);
     border-radius: 10px;
     color: white;
