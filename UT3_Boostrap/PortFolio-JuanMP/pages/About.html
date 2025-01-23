@@ -10,123 +10,128 @@
     <title>Vlog</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-          <div class="container-fluid justify-content-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+  <header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler justify-content-center d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon d-lg-none justify-content-center"></span>
+        </button>
+        <div class="container-fluid  d-none d-sm-block">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="About.html">About</a>
+                    <a class="nav-link" href="About.html">Vlog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="services.html">Services</a>
+                    <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
-              </ul>
-              <!--menu togle 2-->
-              <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                
+            </ul>
+        </div>
+            <!--menu togle 2-->
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item menu-item">
-                  <a class="nav-link" href="./pages/About.html">About</a>
-                </li>
-                <li class="nav-item menu-item">
-                  <a class="nav-link" href="./pages/services.html">Services</a>
-                </li>
-                <li class="nav-item menu-item">
-                  <a class="nav-link" href="./pages/portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item menu-item">
-                  <a class="nav-link" href="./pages/contact.html">Contact</a>
-                </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle menu-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        servicios
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Desarrollo Web Enterprise</a></li>
-                        <li><a class="dropdown-item" href="#">Ciberseguridad</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item menu-item">
+                    <a class="nav-link" href="About.html">Vlog</a>
+                  </li>
+                  <li class="nav-item menu-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item menu-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item menu-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle menu-item" href="services.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">servicios</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="services.html">Desarrollo Web Enterprise</a></li>
+                                <li><a class="dropdown-item" href="services.html">Ciberseguridad</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="services.html">Consultoria Especializada</a></li>
+                            </ul>
                         </li>
-                        <li><a class="dropdown-item" href="#">Consultoria Especializada</a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                    </ul>
                 </div>
-              </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+    <!--div class="logo">
+      <img src="img/logo.png" alt="Logo de la conferencia">
+  </div-->
+</header>
     <main class="container-fluid">
-      <section class="presentacion">
-        <div class="articles-index">
-          <article>
-            <h1>Proyectos Realizados</h1>
+      <section class="presentacion_about">
+        <div class="articles-index col-ms-12 col-md-12 col-lg-12">
+          <article class="container">
+            <h1>Revolución Digital</h1>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+              <h5 class="card-title"> El Poder de la Inteligencia Artificial</h5>
+              <p class="card-text text-justify">La inteligencia artificial (IA) representa una de las revoluciones tecnológicas más importantes de nuestro tiempo. Desde el análisis de grandes volúmenes de datos hasta la automatización de tareas repetitivas, la IA está transformando industrias enteras. Los sistemas de aprendizaje automático están mejorando la precisión en diagnósticos médicos, mientras que los algoritmos de reconocimiento de imágenes y voz están facilitando la interacción entre humanos y máquinas. La IA no solo está redefiniendo la eficiencia, sino que también está abriendo nuevas posibilidades en áreas como la creatividad, la innovación y la personalización de experiencias. Explora cómo esta tecnología está cambiando la manera en que vivimos y trabajamos.</p>
+              <a href="#" class="btn btn-primary">Descubrir más</a>
+          </div>
           </article>
-          <article>
-            <h1>Proyectos Realizados</h1>
+          <article class="container">
+            <h1>El Futuro de la Computación</h1>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </article><article>
-            <h1>Proyectos Realizados</h1>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </article><article>
-            <h1>Proyectos Realizados</h1>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </article><article>
-            <h1>Proyectos Realizados</h1>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </article><article>
-            <h1>Proyectos Realizados</h1>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+              <h5 class="card-title"> Computación Cuántica</h5>
+              <p class="card-text text-justify">La computación cuántica es una de las fronteras más emocionantes en el campo de la tecnología. A diferencia de las computadoras tradicionales que usan bits, las computadoras cuánticas utilizan cúbits, lo que les permite procesar enormes cantidades de datos a velocidades sin precedentes. Esta tecnología tiene el potencial de revolucionar áreas como la criptografía, la simulación de moléculas para descubrir nuevos medicamentos y la optimización de sistemas complejos. Aunque todavía está en sus primeras etapas, la computación cuántica promete cambiar el mundo de maneras inimaginables.</p>
+              <a href="#" class="btn btn-primary">Explorar más</a>
+          </div>
           </article>
-          
-          
+          <article class="container">
+            <h1>La Energía Nuclear en la Tecnología</h1>
+            <div class="card-body">
+              <h5 class="card-title">Potencial y Desafíos en la Tecnología Moderna</h5>
+              <p class="card-text text-justify ">La energía nuclear ha sido una fuente de controversia y maravilla a partes iguales. Con la capacidad de generar grandes cantidades de energía con bajas emisiones de carbono, es una herramienta poderosa en la lucha contra el cambio climático. Además de su uso en la generación de electricidad, la energía nuclear tiene aplicaciones en medicina, industria y exploración espacial. Sin embargo, también plantea desafíos significativos en términos de seguridad y gestión de residuos. Explorar este campo nos permite entender mejor sus beneficios y riesgos.</p>
+              <a href="#" class="btn btn-primary">Descubrir más</a>
+          </div>
+          </article>
+          <article class="container">
+            <h1>Innovación en Salud</h1>
+            <div class="card-body">
+              <h5 class="card-title">Avances Médicos Impulsados por la IA</h5>
+              <p class="card-text text-justify">La inteligencia artificial está revolucionando el campo de la salud, proporcionando herramientas poderosas para el diagnóstico y tratamiento de enfermedades. Algoritmos de IA analizan grandes volúmenes de datos médicos para identificar patrones y predecir resultados, mejorando la precisión en diagnósticos y personalizando tratamientos. Desde el desarrollo de nuevos medicamentos hasta la mejora de la atención al paciente, la IA está transformando la medicina de maneras profundas y significativas. Este avance promete una era de cuidados más eficientes y efectivos.</p>
+              <a href="#" class="btn btn-primary">Explorar más</a>
+          </div>
+          </article>
+          <article class="container">
+            <h1>Educación para Todos</h1>
+            <div class="card-body">
+              <h5 class="card-title">Desafíos y Oportunidades en Países en Desarrollo</h5>
+              <p class="card-text text-justify">La educación es fundamental para el desarrollo económico y social, pero en muchos países en vías de desarrollo, sigue siendo un reto acceder a una educación de calidad. La tecnología está jugando un papel crucial para superar estas barreras, con iniciativas como aulas digitales y recursos educativos en línea que ofrecen nuevas oportunidades de aprendizaje. Mejorar la educación en estos países no solo empodera a individuos, sino que también impulsa el progreso y la innovación a nivel comunitario y nacional.</p>
+              <a href="#" class="btn btn-primary">Descubrir más</a>
+          </div>
+          </article>
+          <article class="container">
+            <h1>Avances en Desarrollo</h1>
+            <div class="card-body">
+              <h5 class="card-title">Tecnologías para Apps Híbridas</h5>
+              <p class="card-text text-justify">Las aplicaciones híbridas están ganando popularidad debido a su capacidad para funcionar en múltiples plataformas utilizando un solo código base. Tecnologías como React Native, Flutter y Xamarin están revolucionando el desarrollo de apps al permitir a los desarrolladores crear aplicaciones eficientes y rápidas sin sacrificar la experiencia del usuario. Estas herramientas combinan lo mejor del desarrollo nativo y web, ofreciendo una solución flexible y rentable. Con las mejoras constantes en rendimiento y funcionalidad, las apps híbridas representan el futuro del desarrollo móvil.</p>
+              <a href="#" class="btn btn-primary">Descubrir más</a>
+          </div>
+          </article>
         </div>
       </section>
-     
-
-      
     </main>
     <footer class="container-fluid">
         <div>

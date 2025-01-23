@@ -12,73 +12,75 @@
     <title>home</title>
 </head>
 <body>
-    <header>
-      <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid justify-content-center">
-          <a class="navbar-brand" href="#">Status Int</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <ul class="nav nav-tabs">
+  <header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler justify-content-center d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon d-lg-none justify-content-center"></span>
+        </button>
+        <div class="container-fluid  d-none d-sm-block">
+            <ul class="nav nav-tabs justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./pages/About.html">About</a>
+                  <a class="nav-link" href="./pages/About.html">Vlog</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item menu-item">
                   <a class="nav-link" href="./pages/services.html">Services</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item menu-item">
                   <a class="nav-link" href="./pages/portfolio.html">Portfolio</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item menu-item">
                   <a class="nav-link" href="./pages/contact.html">Contact</a>
                 </li>
-              </ul>
-              <!--menu togle 2-->
-              <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
+            </ul>
+        </div>
+            <!--menu togle 2-->
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
 
-                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item menu-item">
-                  <a class="nav-link" href="./pages/About.html">About</a>
-                </li>
-                <li class="nav-item menu-item">
-                  <a class="nav-link" href="./pages/services.html">Services</a>
-                </li>
-                <li class="nav-item menu-item">
-                  <a class="nav-link" href="./pages/portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item menu-item">
-                  <a class="nav-link" href="./pages/contact.html">Contact</a>
-                </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle menu-item" href="#" 
-                      role="button" data-bs-toggle="dropdown" aria-expanded="false">servicios</a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Desarrollo Web Enterprise</a></li>
-                        <li><a class="dropdown-item" href="#">Ciberseguridad</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item menu-item">
+                    <a class="nav-link" href="./pages/About.html">Vlog</a>
+                  </li>
+                  <li class="nav-item menu-item">
+                    <a class="nav-link" href="./pages/services.html">Services</a>
+                  </li>
+                  <li class="nav-item menu-item">
+                    <a class="nav-link" href="./pages/portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item menu-item">
+                    <a class="nav-link" href="./pages/contact.html">Contact</a>
+                  </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle menu-item" href="./pages/services.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">servicios</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="./pages/services.html">Desarrollo Web Enterprise</a></li>
+                                <li><a class="dropdown-item" href="./pages/services.html">Ciberseguridad</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/services.html">Consultoria Especializada</a></li>
+                            </ul>
                         </li>
-                        <li><a class="dropdown-item" href="#">Consultoria Especializada</a></li>
-                      </ul>
-                      </li>
-                      </ul>
-                    </div>
+                    </ul>
                 </div>
             </div>
-        </nav>
-        <!--div class="logo">
-          <img src="img/logo.png" alt="Logo de la conferencia">
-      </div-->
-    </header>
+        </div>
+    </nav>
+    <!--div class="logo">
+      <img src="img/logo.png" alt="Logo de la conferencia">
+  </div-->
+</header>
     <div id="container-index">
       <main class="container-fluid">
       <section class="presentacion">

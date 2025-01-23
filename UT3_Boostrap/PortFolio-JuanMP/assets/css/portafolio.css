@@ -44,26 +44,21 @@ header{
 }
 main{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     background-image: url("https://i.pinimg.com/originals/83/be/32/83be325e2d434d410339a95622877f70.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 150vh;
-
-    
 }
 .presentacion{
     width: 50vw;
-    height: 125vh;
+    height: 120vh;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    margin: 10% 20px; ;
+    margin: 10% 2%; ;
 }
 .titulo{
     margin-bottom: 10px;
@@ -161,42 +156,7 @@ main{
     border-radius: 5px;
 }
 /**----------Page index -- */
-#container-index{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
-.articles-index{
-  width: 90%;
-  height: 120vh;
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  background-color: rgba(0, 0, 0, 0.137);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  padding: 1%;
-  margin: auto;
-  
-}
-article{
-  background-color: rgba(252, 252, 252, 0.66);
-  border-radius: 10px;
-  color: var(--main-image-text-color);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  padding: 1%;
-  margin: 1%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgb(142, 30, 246);
-  text-align: center;
-  height: 50vh;
 
-}
 
 /**--------------Pagina contacto -- 
 .background-radial-gradient {
@@ -290,14 +250,16 @@ footer{
 /* pages contact */
 
 .presentacion_contact{
+  display: flex;
+  flex-direction: column;
     width: 50vw;
-    height: 65vh;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    margin: 5% auto;
+    margin: 2% auto;
     padding: 2%;
     border: solid 1px white;
 }
@@ -320,15 +282,52 @@ i{
 }
 /*pages about*/
 .presentacion_about{
-    width: 95vw;
-    height: 65vh;
-    background-color: rgba(255, 255, 255, 0.329);
+  display: flex;
+  flex-direction: column;
+    height: auto;
     border-radius: 10px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    margin: 5% auto;
+    margin: 1% auto;
     padding: 2%;
+}
+.articles-index{
+  width: 90%;
+  height: 120vh;
+  display: grid;
+  gap: 1%;
+  grid-template-columns: repeat(3, 3fr);
+  background-color: rgba(0, 0, 0, 0.13);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 1%;
+  margin: auto;
+  box-shadow: 0 0 10px rgb(142, 30, 246);
+  border-radius: 10px;
+  
+}
+article{
+  background-color: rgba(252, 252, 252, 0.66);
+  border-radius: 10px;
+  color: var(--main-image-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 2%;
+  margin: 1%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(142, 30, 246);
+  text-align: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.articles-index article p{
+  text-align: justify;
 }
 
 /* pages services */
@@ -347,4 +346,6 @@ i{
     font-weight: bold;
     text-align: left;
 }
-
+.card-img-extra{
+  max-width: 90%; height: 100%; border-radius: 10px; margin: 10px;
+}
