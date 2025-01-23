@@ -51,13 +51,13 @@ main{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 90vh;
+    height: 150vh;
 
     
 }
 .presentacion{
     width: 50vw;
-    height: 50vh;
+    height: 125vh;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     color: white;
@@ -100,27 +100,49 @@ main{
   
 .titulo h1{
     
-    font-size: 10rem;
+    font-size: 4.5rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .subtitulo{
     margin-bottom: 10px;
     padding: 1%;
+    border-radius: 10px;
+
+}
+.subtitulo p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1%;
 }
 .img-perfil{
-    width: 30vw;
-    height: 55vh;
+    width: 90%;
+    height: 60%;
     border-radius: 10px;
     background-image: url("https://img.freepik.com/fotos-premium/astronauta-computadora-render-3-d_912214-5478.jpg?w=826");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px 10px -50px 10px ;
-    margin-top: 5vh;
     padding: 1%;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     margin-top: 5vh;
     padding: 1%;
+    margin: auto;
 
+}
+.sobre_mi{
+  width: 90%;
+  height: 38%;
+  border: solid 1px white;
+  border-radius: 10px;
+  margin:  2% auto;
+
+}
+.buton-canvas{
+    align-items: center;
+    margin: 4% ;
 }
 
 .logo{
@@ -137,6 +159,43 @@ main{
 .menu-item:hover{
     border: solid 1px white;
     border-radius: 5px;
+}
+/**----------Page index -- */
+#container-index{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.articles-index{
+  width: 90%;
+  height: 120vh;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  background-color: rgba(0, 0, 0, 0.137);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 1%;
+  margin: auto;
+  
+}
+article{
+  background-color: rgba(252, 252, 252, 0.66);
+  border-radius: 10px;
+  color: var(--main-image-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(142, 30, 246);
+  text-align: center;
+  height: 50vh;
+
 }
 
 /**--------------Pagina contacto -- 
@@ -217,6 +276,16 @@ footer{
     text-decoration: underline;
     font-weight: 700;
   }
+  #btn-fixed {
+    display: block;
+    position: fixed;
+   bottom: 10px;
+   right: 10px;
+}
+  .fa-whatsapp{
+    color: green;
+    font-size: 3em; 
+}
   
 /* pages contact */
 
